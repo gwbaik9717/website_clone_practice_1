@@ -436,3 +436,44 @@ header .sub-menu li a:hover {
     flex-grow: 1;
     flex-basis: 0;
 }
+
+/* FOOTER */
+footer {}
+
+footer .inner {
+    padding: 50px 0;
+    border-top: 1px solid #eee;
+}
+
+footer .site-links {
+    display: flex;
+}
+
+footer .site-links li {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #767676;
+}
+
+footer .site-links li a {
+    color: #4078c0;
+}
+
+footer .site-links li a:hover {
+    text-decoration: underline;
+}
+
+footer .logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+}
+
+footer .logo:hover svg {
+    fill: #4078c0;
+}
