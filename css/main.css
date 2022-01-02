@@ -221,6 +221,18 @@ header .sub-menu li a:hover {
     color: #4078c0;
 }
 
+#toggle-btn {
+    display: none;
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+}
+
 
 /* VISUAL */
 .section--visual {
@@ -550,20 +562,13 @@ footer .logo:hover svg {
     header .toggle {
         display: none;
     }
-    
-    header .toggle.on{
+
+    header .toggle.on {
         display: block;
     }
 
     #toggle-btn {
-        background: url("../img/toggle-btn.svg");
-        width: 18px;
-        height: 24px;
-        position: absolute;
-        text-indent: -9999px;
-        top: 16px;
-        right: 20px;
-        cursor: pointer;
+        display: block;
     }
 
 

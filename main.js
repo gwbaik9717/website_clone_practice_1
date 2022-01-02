@@ -7,4 +7,16 @@ function toggleOn(){
     }
 }
 
+function offElements(){
+    for(let i=0; i<toggles.length; i++){
+        if(window.innerWidth > 1024){
+            //Off toggle
+            for(let i=0; i<toggles.length; i++){
+                toggles.item(i).classList.remove("on");
+            }
+        }
+    }
+}
+
 toggleBtn.addEventListener("click", toggleOn);
+window.addEventListener("resize", offElements);
