@@ -354,10 +354,7 @@ header .sub-menu li a:hover {
     max-width: 1200px;
 }
 
-.section--feature .tiles ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
+.section--feature .tiles ul {}
 
 
 .section--feature .tiles li {
@@ -366,6 +363,8 @@ header .sub-menu li a:hover {
     line-height: 1.5;
     border-right: 1px solid #e5e5e5;
     box-sizing: border-box;
+    float: left;
+    width: 25%;
 }
 
 .section--feature .tiles li:last-child {
@@ -574,7 +573,7 @@ footer .logo:hover svg {
     /* VISUAL */
 
     .section--visual {
-        background-image: url("../img/bg-small.jpg");
+        background-image: url("../img/bg-small.jpg")
     }
 
     .section--visual .inner {
@@ -595,4 +594,48 @@ footer .logo:hover svg {
         max-width: 500px;
         margin: 0 auto;
     }
+
+    /* FEATURE */
+
+    .section--feature .summary {
+        padding: 66px 20px 0 20px;
+    }
+
+    .section--feature .tiles li {
+        width: 50%;
+    }
+
+    .section--feature .tiles li:nth-child(2) {
+        border-right: none;
+    }
+
+    .section--feature .tiles li img {
+        padding: 14px 30% 24px;
+    }
+
+
+    /* WHERE IS */
+    .section--where-is .inner {
+        max-width: none;
+        padding: 80px 20px 0 20px;
+    }
+
+    /* PRICING CARD */
+    .section--pricing {
+        padding: 80px 20px;
+    }
+
+    .section--pricing .card .cell2 {
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+    footer .inner {
+        padding: 50px 20px;
+    }
+
+    footer .logo {
+        display: none;
+    }
+
 }
